@@ -1,0 +1,79 @@
+﻿<Window x:Class="main.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:main"
+        mc:Ignorable="d"
+        Title="학생정보관리" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Width" Value="300"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Setter Property="Margin" Value="0,5,30,0"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Width" Value="90"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </Grid.Resources>
+        
+        <ComboBox x:Name="classChoice" Grid.Row="0" Grid.Column="0" Margin="10,10,0,0" SelectionChanged="classChoice_SelectionChanged"/>
+        <Button x:Name="add" Content="추가" Grid.Row="0" Grid.ColumnSpan="3" Margin="630,5,0,0" Click="add_Click"/>
+        <DataGrid x:Name="result" Grid.RowSpan="10" Grid.Column="0" Margin="10,50,0,10" ItemsSource="{Binding dataTable}" MaxColumnWidth="100" HorizontalAlignment="Center" SelectionChanged="result_SelectionChanged" IsReadOnly="True" FontSize="20"/>
+        <Button x:Name="close" Content="닫기" Grid.Row="10" Grid.Column="0" Width="320" Click="close_Click"/>
+
+        <Label Content="학번: " Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="hakbun" Grid.Row="1" Grid.Column="2"/>
+        <Label Content="이름: " Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="name" Grid.Row="2" Grid.Column="2"/>
+        <Label Content="비밀번호: " Grid.Row="3" Grid.Column="1"/>
+        <PasswordBox x:Name="password" Grid.Row="3" Grid.Column="2" Width="300" Margin="0,5,30,5"/>
+        <TextBox x:Name="txtPassword" Grid.Row="3" Grid.Column="2" Width="300" Margin="0,5,30,5" Visibility="Hidden"/>
+        <Label Content="비밀번호 확인: " Grid.Row="4" Grid.Column="1"/>
+        <PasswordBox x:Name="pass_Confirm" Grid.Row="4" Grid.Column="2" Width="300" Margin="0,5,30,5"/>
+        <Label Content="학과: " Grid.Row="5" Grid.Column="1"/>
+        <ComboBox x:Name="xClass" Grid.Row="5" Grid.Column="2" Width="300" SelectionChanged="xClass_SelectionChanged"/>
+        <Label Content="상태: " Grid.Row="6" Grid.Column="1"/>
+        <ComboBox x:Name="status" Grid.Row="6" Grid.Column="2" Width="300" SelectionChanged="status_SelectionChanged"/>
+        <Label Content="주소: " Grid.Row="7" Grid.Column="1"/>
+        <TextBox x:Name="addr" Grid.Row="7" Grid.Column="2"/>
+        <Label Content="이메일: " Grid.Row="8" Grid.Column="1"/>
+        <TextBox x:Name="email" Grid.Row="8" Grid.Column="2"/>
+        <Label Content="전화: " Grid.Row="9" Grid.Column="1"/>
+        <TextBox x:Name="phone" Grid.Row="9" Grid.Column="2"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="10" Grid.Column="2">
+            <Button x:Name="confirm" Content="확인" Click="confirm_Click"/>
+            <Button x:Name="delete" Content="삭제" Click="delete_Click"/>
+            <Button x:Name="cancel" Content="취소" Height="29" Margin="5,5,5,0" VerticalAlignment="Top" Click="cancel_Click"/>
+        </StackPanel>                
+    </Grid>
+</Window>

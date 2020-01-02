@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\bin\Debug\xLocalDB.dll.config
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\bin\Debug\xLocalDB.dll
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\bin\Debug\xLocalDB.pdb
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\obj\Debug\xLocalDB.csprojAssemblyReference.cache
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\obj\Debug\xLocalDB.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\obj\Debug\xLocalDB.dll
+C:\Users\user\Desktop\1학기\의용디비\프로그램\데이터베이스_수강관리프로그램_15615013_김준혁\xLocalDB\obj\Debug\xLocalDB.pdb

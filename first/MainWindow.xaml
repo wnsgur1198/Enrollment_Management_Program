@@ -1,0 +1,36 @@
+﻿<Window x:Class="first.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:first"
+        mc:Ignorable="d"
+        Title="수강관리" Height="400" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="Width" Value="280"/>
+                <Setter Property="Height" Value="50"/>
+            </Style>
+        </Grid.Resources>
+        
+        <Button x:Name="StudentManage" Content="학생정보관리" Grid.Row="0" Click="StudentManage_Click"/>
+        <Button x:Name="TeacherManage" Content="강사정보관리" Grid.Row="1" Click="TeacherManage_Click"/>
+        <Button x:Name="ClassManage" Content="교과목관리" Grid.Row="2" Click="ClassManage_Click"/>
+        <Button x:Name="CurriManage" Content="교육과정관리" Grid.Row="3" Click="CurriManage_Click"/>
+        <Button x:Name="OpenManage" Content="개설과목관리" Grid.Row="4" Click="OpenManage_Click"/>
+        <Button x:Name="ApplyManage" Content="수강신청관리" Grid.Row="5" Click="ApplyManage_Click"/>
+        <TextBlock Text="@Made By 의료IT공학과 3학년 15615013 김준혁" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+    </Grid>
+</Window>
