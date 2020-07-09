@@ -1,7 +1,7 @@
 # Enrollment_Management_Program
 > 학부생 3학년 1학기 때 개발한 수강관리프로그램
 
-![](readme-img/header1.png)
+![](readme-img/header.png)
 
 ## Installation
 
@@ -20,7 +20,7 @@ DBMS: Access 2010
 ## Release History
 
 * 1.0.0
-    * first commit
+    * first
     * 개발 완료
 
 ## Meta
