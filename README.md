@@ -3,19 +3,19 @@
 
 ![](readme-img/header.png)
 
-## Installation
+## 개발기간 
+* 2019.05.17.~2019.06.05. (약15일)
 
--
 
-## Usage example
+##	주요기능
+* 데이터베이스에서 자료를 가져와 학생정보를 관리함
+* 입력데이터에 대해 유효성검사 적용
 
-닷넷 프레임워크와 Access를 이용한 수강관리프로그램 개발
 
 ## Development setup
+* Framework: .Net 4.7.2
+* DBMS: Access 2010
 
-Framework: .Net 4.7.2
-
-DBMS: Access 2010
 
 ## Release History
 
@@ -23,16 +23,7 @@ DBMS: Access 2010
     * first
     * 개발 완료
 
-## Meta
 
-김준혁 – wnsgur1198@naver.com
+## Contact
 
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
+김준혁 – kimjunhyeok.it@gmail.com
